@@ -63,7 +63,7 @@ const HelpingArea = () => {
                   <iframe
                     allowpaymentrequest=""
                     frameborder="0"
-                    height="900px"
+                    height="600px"
                     name="donorbox"
                     scrolling="no"
                     seamless="seamless"
@@ -75,7 +75,6 @@ const HelpingArea = () => {
                       maxHeight: "none!important",
                     }}
                   ></iframe>
-                  <p className="section__meta text__white">donate us now</p>
                 </div>
               </div>
             </div>

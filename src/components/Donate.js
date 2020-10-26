@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+
 
 const Donate = () => {
     return (
@@ -26,54 +26,21 @@ const Donate = () => {
                         <div className="donate-item">
                             <h3 className="donate__title">Personal Info</h3>
                             <div className="form-shared">
-                                <form action="#">
-                                    <div className="row">
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="First Name" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="Last Name" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="form-group">
-                                                <input type="email" className="form-control"
-                                                       placeholder="Email Address" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="Phone Number" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="Address" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="form-group">
-                                                <div className="select-group">
-                                                    <select className="select-option">
-                                                        <option value="Country">Country</option>
-                                                        <option value="usa">Usa</option>
-                                                        <option value="Uk">Uk</option>
-                                                        <option value="Pakistan">Pakistan</option>
-                                                        <option value="Bangladesh">Bangladesh</option>
-                                                        <option value="India">India</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <textarea className="textarea" name="message"
-                                                      placeholder="Leave a Comment"></textarea>
-                                        </div>
-                                    </div>
-                                </form>
+                            <iframe
+                    allowpaymentrequest=""
+                    frameborder="0"
+                    height="600px"
+                    name="donorbox"
+                    scrolling="no"
+                    seamless="seamless"
+                    src="https://donorbox.org/embed/kevdev-giving-tuesday"
+                    style={{
+                      width: "100%",
+                      maxWidth: "500px",
+                      minWidth: "250px",
+                      maxHeight: "none!important",
+                    }}
+                  ></iframe>
                             </div>
                         </div>
                         <div className="donate-item">
@@ -138,7 +105,7 @@ const Donate = () => {
                                         <img src="/images/img15.jpg" alt="" />
                                     </div>
                                     <div className="blog-inner-content">
-                                        <h3 className="blog__title"><Link href="/causes-detail"><a>They Want to Study</a></Link>
+                                        <h3 className="blog__title"><a>They Want to Study</a>
                                         </h3>
                                         <ul className="blog__list">
                                             <li><i className="icon-target"></i> Goal: <span>$30,000</span></li>

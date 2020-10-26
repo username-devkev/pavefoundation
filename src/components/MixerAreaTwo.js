@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+
 
 const MixerAreaTwo = () => {
     return (
@@ -13,7 +13,7 @@ const MixerAreaTwo = () => {
                             </div>
                             <h2 className="section__title text__white">Our fingerprints on the lives we touch never
                                 fade</h2>
-                            <Link href="/donate"><a className="theme-btn">start donation</a></Link>
+<a className="theme-btn">start donation</a>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Accordion from 'accordion-js';
 
 class FaqArea extends Component {
 

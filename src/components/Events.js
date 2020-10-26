@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+
 
 const Events = () => {
     return (
@@ -17,7 +17,7 @@ const Events = () => {
                             </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail"><a>Save the planets</a></Link></h3>
+                                    <h3 className="blog__title"><a>Save the planets</a></h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
                                         <li>San marcos</li>
@@ -37,7 +37,7 @@ const Events = () => {
                             </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail"><a>Play for the world</a></Link></h3>
+                                    <h3 className="blog__title"><a>Play for the world</a></h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
                                         <li>San marcos</li>
@@ -57,7 +57,7 @@ const Events = () => {
                             </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail"><a>Water for charity</a></Link></h3>
+                                    <h3 className="blog__title"><a>Water for charity</a></h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
                                         <li>San marcos</li>
@@ -77,7 +77,8 @@ const Events = () => {
                             </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail"><a>Help for education</a></Link></h3>
+                                    <h3 className="blog__title">
+                                        <a>Help for education</a></h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
                                         <li>San marcos</li>
@@ -97,7 +98,7 @@ const Events = () => {
                             </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail"><a>Protect eco system</a></Link></h3>
+                                    <h3 className="blog__title"><a>Protect eco system</a></h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
                                         <li>San marcos</li>
@@ -117,7 +118,7 @@ const Events = () => {
                             </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail"><a>Fight for right cause</a></Link>
+                                    <h3 className="blog__title"><a>Fight for right cause</a>
                                     </h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>

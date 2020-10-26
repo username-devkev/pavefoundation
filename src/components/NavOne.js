@@ -1,33 +1,29 @@
-import React, { Component } from "react";
+import React, { Component,useState,useEffect } from "react";
+import { Link,useHistory} from "react-router-dom";
 
-class NavOne extends Component {
-  constructor() {
-    super();
-    this.state = {
-      sticky: false,
-    };
-  }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+function NavOne() {
+  const [sticky,setSticky]=useState(false)
+  let history=useHistory()
+
+  useEffect(()=>{
+    window.addEventListener("scroll", handleScroll);
 
     //Mobile Menu
-    this.mobileMenu();
-  }
+    mobileMenu();
+  },[])
 
-  handleScroll = () => {
+
+  const handleScroll = () => {
     if (window.scrollY > 100) {
-      this.setState({
-        sticky: true,
-      });
+     
+      setSticky(true);
     } else if (window.scrollY < 100) {
-      this.setState({
-        sticky: false,
-      });
+      setSticky(false)
     }
   };
 
-  mobileMenu = () => {
+  const mobileMenu = () => {
     //Mobile Menu Toggle
     let mainNavToggler = document.querySelector(".mobile-menu-toggle");
     let mainNav = document.querySelector(".side-nav-container");
@@ -43,7 +39,7 @@ class NavOne extends Component {
     });
   };
 
-  render() {
+
     return (
       <div>
         <header className="header-area">
@@ -91,7 +87,7 @@ class NavOne extends Component {
           </div>
           <div
             className={`header-top header-menu-action ${
-              this.state.sticky ? "header-fixed" : ""
+              sticky ? "header-fixed" : ""
             }`}
           >
             <div className="container">
@@ -100,13 +96,13 @@ class NavOne extends Component {
                   <div className="logo-action d-flex align-items-center">
                     <div className="ostion-logo">
                       <div href="/">
-                        <a>
+                        <Link className='navbar-brand' to='/'>
                           <img
                             src="/images/logo.png"
                             alt="Pave Foundation Logo"
                             title="Pave Foundation Logo"
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="header-btn ml-auto">
@@ -125,40 +121,71 @@ class NavOne extends Component {
                         <nav className="main-navigation">
                           <ul>
                             <li className="active">
-                              <div href="/">
-                                <a href="/">Home</a>
-                              </div>
+                               <Link to='home'>Home</Link>
                             </li>
 
                             <li>
-                              <a href="#">events</a>
-                            </li>
-
-                            <li>
-                              <a href="#">About Us</a>
+                              <Link to='/events'>Events</Link>
                               <ul className="dropdown-menu-item">
                                 <li>
-                                  <div href="/about">
-                                    <a>About</a>
-                                  </div>
+                                    <Link to='/events/givingtuesday'>Giving Tuesday Fund Drive </Link>   
                                 </li>
                                 <li>
-                                  <div href="/gallery">
-                                    <a>Gallery</a>
-                                  </div>
+                                <Link to='/events/2021camp'>
+                                    2021 Camp
+                                </Link>
+                                </li>
+                              </ul>
+                            </li>
+
+                            <li>
+                              <Link to='#'>Get Involved</Link>
+                              <ul className="dropdown-menu-item">
+                                <li>
+                                    <Link to='/donate'>Donate </Link>   
                                 </li>
                                 <li>
-                                  <div href="/team">
-                                    <a>Our Team</a>
-                                  </div>
+                                <Link to='/volunteer'>
+                                    Volunteer
+                                </Link>
                                 </li>
                               </ul>
                             </li>
                             <li>
-                              <div href="/contact">
-                                <a>contact</a>
-                              </div>
+                              <Link to='/explore'>explore</Link>
+                              <ul className="dropdown-menu-item">
+                                <li>
+                                    <Link to='/explore/gallery'>Gallery </Link>   
+                                </li>
+                                
+                                <li>
+                                  <Link to='/explore/social'>
+                                    Social
+                                  </Link>
+                                </li>
+                               
+                              </ul>
                             </li>
+
+                            <li>
+                              <Link to='/about'>About</Link>
+                              <ul className="dropdown-menu-item">
+                                <li>
+                                    <Link to='/about'>Mission </Link>   
+                                </li>
+                                <li>
+                                <Link to='/team'>
+                                    Team
+                                </Link>
+                                </li>
+                                <li>
+                                <Link to='/contact'>
+                                    Contact
+                                </Link>
+                                </li>
+                              </ul>
+                            </li>
+                            
                           </ul>
                         </nav>
                       </div>
@@ -178,114 +205,64 @@ class NavOne extends Component {
             <div className="side-menu-wrap">
               <ul className="side-menu-ul">
                 <li className="sidenav__item">
-                  <a href="/">home</a>
-                  <span className="menu-plus-icon"></span>
+                      <Link to='/'>Home</Link>
+                </li>
+
+                <li className="sidenav__item">
+                  <Link to='/events'>Events</Link>
                   <ul className="side-sub-menu">
                     <li>
-                      <div href="/">
-                        <a>Home 1</a>
-                      </div>
+                      <Link to='/events/givingtuesday'>Giving Tuesday Fund Drive</Link>
                     </li>
                     <li>
-                      <div href="/index2">
-                        <a>Home 2</a>
-                      </div>
+                      <Link to='/events/2021camp'>2021 Camp</Link>
                     </li>
                   </ul>
                 </li>
 
                 <li className="sidenav__item">
-                  <a href="#">causes</a>
-                  <span className="menu-plus-icon"></span>
+                <Link to='/'>Get Involved</Link>
+
                   <ul className="side-sub-menu">
                     <li>
-                      <div href="/causes">
-                        <a>causes</a>
-                      </div>
+                      <Link to='/donate'>Donate</Link>
+                    </li>
+
+                    <li>
+                      <Link to='/volunteer'>Volunteer</Link>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li className="sidenav__item">
+                  <Link>About</Link>
+
+                  <ul className="side-sub-menu">
+                    <li>
+                      <Link to='/about'>Mission</Link>
                     </li>
                     <li>
-                      <div href="/causes-detail">
-                        <a>causes detail</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div href="/donate">
-                        <a>donate now</a>
-                      </div>
+                      <Link to='/team'> Team</Link>
                     </li>
                   </ul>
                 </li>
 
                 <li className="sidenav__item">
-                  <a href="#">event</a>
-                  <span className="menu-plus-icon"></span>
+                  <Link to='/explore'>Explore</Link>
                   <ul className="side-sub-menu">
                     <li>
-                      <div href="/events">
-                        <a>events</a>
-                      </div>
+                      <Link to='/explore/gallery'>Gallery</Link>
                     </li>
                     <li>
-                      <div href="/events-detail">
-                        <a>events detail</a>
-                      </div>
+                     <Link to='/explore/contact'>Contact</Link>
+                    </li>
+                    <li>
+                     <Link to='/explore/social'>Social</Link>
                     </li>
                   </ul>
                 </li>
-
-                <li className="sidenav__item">
-                  <a href="#">news</a>
-                  <span className="menu-plus-icon"></span>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <div href="/news">
-                        <a>news</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div href="/single-news">
-                        <a>news detail</a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-
-                <li className="sidenav__item">
-                  <a href="#">pages</a>
-                  <span className="menu-plus-icon"></span>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <div href="/about">
-                        <a>about</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div href="/gallery">
-                        <a>gallery</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div href="/volunteer">
-                        <a>become a volunteer</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div href="/team">
-                        <a>our team</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div href="/sponsor">
-                        <a>sponsors</a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li className="sidenav__item">
-                  <div href="/contact">
-                    <a>contact</a>
-                  </div>
-                </li>
+               
               </ul>
               <ul className="side-social">
                 <li>
@@ -319,7 +296,7 @@ class NavOne extends Component {
         </header>
       </div>
     );
-  }
+  
 }
 
 export default NavOne;
