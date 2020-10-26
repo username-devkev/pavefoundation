@@ -50,7 +50,7 @@ const HelpingArea = () => {
             {/* Donation */}
             <div className="col-lg-6">
               <div className="helping-form p-2 pt-0">
-                <div className="section-heading">
+                <div className="section-heading d-flex flex-column justify-content-center align-content-center">
                   <div className="section-icon">
                     <img src="/images/section-icon.png" alt="section-icon" />
                   </div>
@@ -60,10 +60,11 @@ const HelpingArea = () => {
                   >
                     Make a Donation
                   </h2>
+                  <div id="donorbox-homepage" className='row' style={{display:'flex', justifyContent:'center'}}>
                   <iframe
                     allowpaymentrequest=""
                     frameborder="0"
-                    height="600px"
+                    height="450px"
                     name="donorbox"
                     scrolling="no"
                     seamless="seamless"
@@ -72,9 +73,12 @@ const HelpingArea = () => {
                       width: "100%",
                       maxWidth: "500px",
                       minWidth: "250px",
-                      maxHeight: "none!important",
+                      height: "450px!important",
+                      margin:0,
+                      padding:0
                     }}
                   ></iframe>
+                  </div>
                 </div>
               </div>
             </div>

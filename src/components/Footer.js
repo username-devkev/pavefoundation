@@ -45,7 +45,8 @@ class Footer extends Component {
                                         <h2 className="section__title text__white">Newsletter</h2>
                                         <p className="section__meta">stay updated</p>
                                     </div>
-                                    <div className="newsletter-form">
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAbjD-uXppApTFXtN5moklEphu56036NGrsGCCw8F2CUpyvA/viewform?embedded=true" width="640" height="200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                    {/* <div className="newsletter-form">
                                         <div className="form-shared">
                                             <form action="#">
                                                 <div className="row">
@@ -63,7 +64,8 @@ class Footer extends Component {
                                                 </div>
                                             </form>
                                         </div>
-                                    </div>
+                                    </div> */}
+
                                 </div>
                             </div>
                         </div>

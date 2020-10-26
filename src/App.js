@@ -15,7 +15,10 @@ import About from './pages/about';
 import Events from './pages/events'
 import EventsDetailPage from "./pages/eventsDetail";
 import Donate from './pages/donate';
-import Volunteer from './pages/volunteer'
+import Volunteer from './pages/volunteer';
+import Gallery from './pages/gallery';
+import Contact from './pages/contact';
+import Team from './pages/team'
 
 
 //app file w/ react-router
@@ -27,11 +30,16 @@ function App() {
       <Index />
     </Route>
     
-    <Route path='/events'>
-
+    <Route exact path='/events'>
       <Events/>
-      {/* Giving Tuesday */}
-      {/* 2021 Camp */}
+    </Route>
+
+    <Route path='/events/givingtuesday'>
+      <EventsDetailPage/>
+    </Route>
+
+    <Route path='/events/2021camp'>
+      <EventsDetailPage/>
     </Route>
 
     <Route path='/donate'>
@@ -42,18 +50,23 @@ function App() {
       <Volunteer/>
     </Route>
 
-    <Route path=''></Route>
 
-    <Route path='/explore'>
-      <Switch>
 
-      </Switch>
+    <Route path='/explore/gallery'>
+      <Gallery/>
     </Route>
+
     
 
     <Route path='/about'>
       <About/>
       
+    </Route>
+    <Route path='/team'>
+      <Team/>
+    </Route>
+    <Route path='/contact'>
+      <Contact/>
     </Route>
    
     

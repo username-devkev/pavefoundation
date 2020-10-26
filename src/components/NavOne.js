@@ -106,8 +106,8 @@ function NavOne() {
                       </div>
                     </div>
                     <div className="header-btn ml-auto">
-                      <div href="/donate">
-                        <a className="theme-btn" style={{ color: "white" }}>
+                      <div>
+                        <a className="theme-btn" href='/#donorbox-homepage' style={{ color: "white" }}>
                           donate now
                         </a>
                       </div>
@@ -121,7 +121,7 @@ function NavOne() {
                         <nav className="main-navigation">
                           <ul>
                             <li className="active">
-                               <Link to='home'>Home</Link>
+                               <Link to='/'>Home</Link>
                             </li>
 
                             <li>
