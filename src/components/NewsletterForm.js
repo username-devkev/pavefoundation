@@ -5,6 +5,7 @@ export default function NewsletterForm() {
   const [email, setEmail] = useState(null);
 
   let header = {
+    "Access-Control-Allow-Origin": "*",
     emailAddress: email,
     fvv: 1,
     draftResponse: [null, null, "-5532202287099307631"],
@@ -20,7 +21,8 @@ export default function NewsletterForm() {
           header,
         }
       )
-      .then((res) => console.log("successsssssssss", res));
+      .then((res) => console.log("successsssssssss", res))
+      .catch((err) => console.log("error", err));
   }
 
   return (
