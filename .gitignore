@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-/lambd 
+/lambda
 
 # production
 # /build
