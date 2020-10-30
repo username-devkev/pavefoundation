@@ -3,34 +3,54 @@ import axios from "axios";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState(null);
+  const [response, setResponse] = useState(null);
+  const [error, setError] = useState(null);
 
-  let header = {
-    "Access-Control-Allow-Origin": "*",
-    emailAddress: email,
-    fvv: 1,
-    draftResponse: [null, null, "-5532202287099307631"],
-    pageHistory: 0,
-    fbzx: -5532202287099307631,
-  };
+  function removeError() {
+    const errorMesaggeTag = document.querySelector("#");
+    errorMesaggeTag.parentNode.removeChild(errorMesaggeTag);
+  }
 
   function onSubmit() {
     axios
-      .post(
-        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdAbjD-uXppApTFXtN5moklEphu56036NGrsGCCw8F2CUpyvA/formResponse",
-        {
-          header,
+      .post("http://localhost:4000/email", {
+        emailAddress: email,
+      })
+      .then((res) => {
+        const { status } = res;
+        if (status === 200) {
+          setResponse({
+            status: 200,
+            text: "Thank You for Subscribing",
+          });
         }
-      )
-      .then((res) => console.log("successsssssssss", res))
-      .catch((err) => console.log("error", err));
+      })
+      .catch((err) => {
+        console.log(err);
+        setInterval(removeError, 3000);
+      });
   }
 
-  return (
-    <div>
-      <h1 style={{ color: "#FFF" }}>Newsletter Registration</h1>
-      <h2 style={{ color: "#FFF" }}>Email Address:</h2>
-      <input type="email" onChange={(e) => setEmail(e.target.value)} />
-      <input type="submit" value="submit" onClick={() => onSubmit()} />
-    </div>
-  );
+  if (!response || response.status === 400) {
+    return (
+      <div className={"container pt-0 pb-0 mt-0 mb-0"}>
+        <div
+          id="form-Newsletter"
+          className={"row d-flex flex-column justify-content-center"}
+        >
+          <h1 style={{ color: "#FFF" }}>Newsletter Registration</h1>
+          <h2 style={{ color: "#FFF" }}>Email Address:</h2>
+          <input type="email" onChange={(e) => setEmail(e.target.value)} />
+          <input type="submit" value="submit" onClick={() => onSubmit()} />
+        </div>
+      </div>
+    );
+  }
+  if (response.status == 200) {
+    return (
+      <div>
+        <h1 style={{ color: "#FFF" }}>Thanks for subscribing</h1>
+      </div>
+    );
+  }
 }
