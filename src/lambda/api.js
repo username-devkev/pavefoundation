@@ -6,7 +6,7 @@ const app = express();
 const router = express.Router();
 
 router.get("/api", (req, res) => {
-  res.write(<h1>hello</h1>);
+  res.json("success");
 });
 
 app.use("./netlify/functions", router);
