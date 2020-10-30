@@ -6,13 +6,11 @@
 /function
 
 # testing
-/coverage
-/lambda
+
 
 # production
 # /build
-/build
-/build-lambda
+
 # misc
 .DS_Store
 .env.local
