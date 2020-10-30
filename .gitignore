@@ -3,13 +3,16 @@
 # dependencies
 /.pnp
 .pnp.js
+/function
 
 # testing
 /coverage
+/lambd 
 
 # production
 # /build
-
+/build
+/build-lambda
 # misc
 .DS_Store
 .env.local

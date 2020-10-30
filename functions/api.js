@@ -5,7 +5,7 @@ const app = express();
 
 const router = express.Router();
 
-router.get("/api", (req, res) => {
+router.get("/", (req, res) => {
   res.write(<h1>hello</h1>);
 });
 
