@@ -32,26 +32,14 @@ class Footer extends Component {
     return (
       <div>
         <section className="footer-area p-0">
-          <div className="newsletter-area">
-            <div className="container" style={{ height: "500px" }}>
+          <div className="newsletter-area  ml-2">
+            <div className="container" style={{ height: "200px" }}>
               <div className="row h-100">
-                {/* <iframe
-                  title="Google Form for Newsletter Email Sign Up"
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSdAbjD-uXppApTFXtN5moklEphu56036NGrsGCCw8F2CUpyvA/viewform?embedded=true"
-                  style={{ color: "red" }}
-                  width="640"
-                  frameborder="0"
-                  marginheight="0"
-                  marginwidth="0"
-                  style={{ height: "100%" }}
-                >
-                  Loading…
-                </iframe> */}
                 <NewsletterForm />
               </div>
             </div>
           </div>
-          <div className="footer-top p-0 pt-3">
+          <div className="footer-top mt-5 p-0 pt-5">
             <div className="container">
               <div className="row footer-widget-wrap">
                 <div className="col footer-item footer-item1">
@@ -109,22 +97,33 @@ class Footer extends Component {
                   <div className="footer__social pt-2 pb-2">
                     <ul>
                       <li>
-                        <a href="#">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://twitter.com/THEPAVEFOUNDAT1?s=09"
+                          alt="twitter"
+                        >
                           <i className="fa fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.facebook.com/pg/thepavefoundation/events/"
+                          alt="facebook"
+                        >
                           <i className="fa fa-facebook"></i>
                         </a>
                       </li>
+
                       <li>
-                        <a href="#">
-                          <i className="fa fa-pinterest"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.instagram.com/thepavefoundation/"
+                          alt="instagram"
+                        >
                           <i className="fa fa-instagram"></i>
                         </a>
                       </li>

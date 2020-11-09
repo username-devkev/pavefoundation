@@ -1,63 +1,48 @@
 import React from "react";
 
 const ServiceArea = () => {
+  const sectionData = [
+    {
+      icon: "fa fa-microscope",
+      title: "Science",
+      paragraph: "NEEDS TEXT",
+    },
+    {
+      icon: "fa fa-desktop",
+      title: "Technology",
+      paragraph: "NEEDS TEXT",
+    },
+    {
+      icon: "fa fa-cogs",
+      title: "Engineering",
+      paragraph: "NEEDS TEXT",
+    },
+    {
+      icon: "fa fa-paint-brush",
+      title: "Arts",
+      paragraph: "NEEDS TEXT",
+    },
+    {
+      icon: "fa fa-divide",
+      title: "Mathematics",
+      paragraph: "NEEDS TEXT ",
+    },
+  ];
   return (
     <section className="service-area text-center pb-3 pt-3">
-      <img
-        src="/images/heart-icon1.png"
-        alt=""
-        className="heart-icon heart-icon-1"
-      />
-      <img
-        src="/images/heart-icon2.png"
-        alt=""
-        className="heart-icon heart-icon-2"
-      />
-      <img
-        src="/images/heart-icon3.png"
-        alt=""
-        className="heart-icon heart-icon-3"
-      />
-      <img
-        src="/images/heart-icon4.png"
-        alt=""
-        className="heart-icon heart-icon-4"
-      />
-      <img
-        src="/images/heart-icon5.png"
-        alt=""
-        className="heart-icon heart-icon-5"
-      />
-      <img
-        src="/images/heart-icon6.png"
-        alt=""
-        className="heart-icon heart-icon-6"
-      />
-      <img
-        src="/images/heart-icon7.png"
-        alt=""
-        className="heart-icon heart-icon-7"
-      />
-      <img
-        src="/images/heart-icon8.png"
-        alt=""
-        className="heart-icon heart-icon-8"
-      />
-      <img
-        src="/images/heart-icon9.png"
-        alt=""
-        className="heart-icon heart-icon-9"
-      />
-      <img
-        src="/images/heart-icon10.png"
-        alt=""
-        className="heart-icon heart-icon-10"
-      />
-      <img
-        src="/images/heart-icon11.png"
-        alt=""
-        className="heart-icon heart-icon-11"
-      />
+      {/* render hearts */}
+      {[...Array(11)].map((el, i) => {
+        if (i === 0) return;
+        return (
+          <img
+            src={`/images/heart-icon${i}.png`}
+            alt={"heart-icon"}
+            className={`heart-icon heart-icon-${i}`}
+            key={i}
+          />
+        );
+      })}
+
       {/* Title */}
       <div className="container">
         <div className="row">
@@ -74,91 +59,24 @@ const ServiceArea = () => {
         </div>
 
         <div className="row service-wrap">
-          <div className="col">
-            <div className="service-item service-item1">
-              <div className="service-item-inner">
-                <div className="service-icon">
-                  <i className="fa fa-microscope"></i>
-                </div>
-                <div className="service-content">
-                  <h4 className="service__title">Science</h4>
-                  <p className="service__desc">
-                    Lorem ipsum is simply free text available in the market
-                    wesbites.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col">
-            <div className="service-item service-item2">
-              <div className="service-item-inner">
-                <div className="service-icon">
-                  <i className="fa fa-desktop"></i>
-                </div>
-                <div className="service-content">
-                  <h4 className="service__title">Technology</h4>
-                  <p className="service__desc">
-                    Lorem ipsum is simply free text available in the market
-                    wesbites.
-                  </p>
+          {sectionData.map((el, i) => {
+            return (
+              <div className="col-xs-4 col-sm-4 col-lg-3 col-xl-3 mb-2">
+                <div className={`service-item service-item${i + 1}`}>
+                  <div className="service-item-inner">
+                    <div className="service-icon">
+                      <i className={el.icon}></i>
+                    </div>
+                    <div className="service-content">
+                      <h4 className="service__title">{el.title}</h4>
+                      <p className="service__desc">{el.paragraph}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="service-item service-item3">
-              <div className="service-item-inner">
-                <div className="service-icon">
-                  <i className="fa fa-cogs"></i>
-                </div>
-                <div className="service-content">
-                  <h4 className="service__title">Engineering</h4>
-                  <p className="service__desc">
-                    Lorem ipsum is simply free text available in the market
-                    wesbites.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col">
-            <div className="service-item service-item4">
-              <div className="service-item-inner">
-                <div className="service-icon">
-                  <i className="fa fa-paint-brush"></i>
-                </div>
-                <div className="service-content">
-                  <h4 className="service__title">Arts</h4>
-                  <p className="service__desc">
-                    Lorem ipsum is simply free text available in the market
-                    wesbites.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col">
-            <div className="service-item service-item1">
-              <div className="service-item-inner">
-                <div className="service-icon">
-                  <i className="fa fa-divide"></i>
-                </div>
-                <div className="service-content">
-                  <h4 className="service__title">Mathematics</h4>
-                  <p className="service__desc">
-                    Lorem ipsum is simply free text available in the market
-                    wesbites.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
-       
       </div>
     </section>
   );

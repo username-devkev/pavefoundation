@@ -1,25 +1,23 @@
-import React, { Component,useState,useEffect } from "react";
-import { Link,useHistory} from "react-router-dom";
-
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function NavOne() {
-  const [sticky,setSticky]=useState(false)
-  let history=useHistory()
+  const [sticky, setSticky] = useState(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     //Mobile Menu
     mobileMenu();
-  },[])
-
+  }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 100) {
-     
+    if (window.scrollY > 100 && window.scrollY < 1400) {
       setSticky(true);
     } else if (window.scrollY < 100) {
-      setSticky(false)
+      setSticky(false);
+    } else if (window.scrollY > 1800) {
+      setSticky(false);
     }
   };
 
@@ -39,264 +37,266 @@ function NavOne() {
     });
   };
 
-
-    return (
-      <div>
-        <header className="header-area">
-          <div className="header-top-action">
-            <div className="container">
-              <div className="row">
-                <div className="col-12">
-                  <div className="top-action-content info-action-content">
-                    <div className="info-box info-box-2 d-flex align-items-stretch justify-content-around">
-                      <ul className="top-action-list d-flex align-items-stretch">
-                        <li>
-                          <a href="#">
-                            <i className="fa fa-envelope"></i>
-                            info@pavefoundation.org
-                          </a>
-                        </li>
-                      </ul>
-                      <ul className="top-action-list d-flex align-items-stretch">
-                        <li>
-                          <a href="#">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i className="fa fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i className="fa fa-pinterest"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i className="fa fa-instagram"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`header-top header-menu-action ${
-              sticky ? "header-fixed" : ""
-            }`}
-          >
-            <div className="container">
-              <div className="row ostion-top-wrap">
-                <div className="col-lg-5 col-sm-5 site-branding">
-                  <div className="logo-action d-flex align-items-center">
-                    <div className="ostion-logo">
-                      <div href="/">
-                        <Link className='navbar-brand' to='/'>
-                          <img
-                            src="/images/logo.png"
-                            alt="Pave Foundation Logo"
-                            title="Pave Foundation Logo"
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="header-btn ml-auto">
-                      <div>
-                        <a className="theme-btn" href='/#donorbox-homepage' style={{ color: "white" }}>
-                          donate now
+  return (
+    <div>
+      <header className="header-area">
+        <div className="header-top-action">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="top-action-content info-action-content">
+                  <div className="info-box info-box-2 d-flex align-items-stretch justify-content-around">
+                    <ul className="top-action-list d-flex align-items-stretch">
+                      <li>
+                        <a href="/">
+                          <i className="fa fa-envelope"></i>
+                          info@pavefoundation.org
                         </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-7 col-sm-7 ostion-menu">
-                  <div className="ostion-menu-innner">
-                    <div className="ostion-menu-content">
-                      <div className="navigation-top">
-                        <nav className="main-navigation">
-                          <ul>
-                            <li className="active">
-                               <Link to='/'>Home</Link>
-                            </li>
-
-                            <li>
-                              <Link to='/events'>Events</Link>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                    <Link to='/events/givingtuesday'>Giving Tuesday Fund Drive </Link>   
-                                </li>
-                                <li>
-                                <Link to='/events/2021camp'>
-                                    2021 Camp
-                                </Link>
-                                </li>
-                              </ul>
-                            </li>
-
-                            <li>
-                              <Link to='#'>Get Involved</Link>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                    <Link to='/donate'>Donate </Link>   
-                                </li>
-                                <li>
-                                <Link to='/volunteer'>
-                                    Volunteer
-                                </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <Link to='/explore'>explore</Link>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                    <Link to='/explore/gallery'>Gallery </Link>   
-                                </li>
-                                
-                                <li>
-                                  <Link to='/explore/social'>
-                                    Social
-                                  </Link>
-                                </li>
-                               
-                              </ul>
-                            </li>
-
-                            <li>
-                              <Link to='/about'>About</Link>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                    <Link to='/about'>Mission </Link>   
-                                </li>
-                                <li>
-                                <Link to='/team'>
-                                    Team
-                                </Link>
-                                </li>
-                                <li>
-                                <Link to='/contact'>
-                                    Contact
-                                </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            
-                          </ul>
-                        </nav>
-                      </div>
-                    </div>
-                    <div className="mobile-menu-toggle">
-                      <i className="fa fa-bars"></i>
-                    </div>
+                      </li>
+                    </ul>
+                    <ul className="top-action-list d-flex align-items-stretch">
+                      <li>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://twitter.com/THEPAVEFOUNDAT1?s=09"
+                        >
+                          <i className="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.facebook.com/pg/thepavefoundation/events/"
+                        >
+                          <i className="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.instagram.com/thepavefoundation/"
+                        >
+                          <i className="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="side-nav-container">
-            <div className="humburger-menu">
-              <div className="humburger-menu-lines side-menu-close"></div>
-            </div>
-            <div className="side-menu-wrap">
-              <ul className="side-menu-ul">
-                <li className="sidenav__item">
-                      <Link to='/'>Home</Link>
-                </li>
+        </div>
+        <div
+          className={`header-top header-menu-action ${
+            sticky ? "header-fixed" : ""
+          }`}
+        >
+          <div className="container">
+            <div className="row ostion-top-wrap">
+              <div className="col-lg-5 col-sm-5 site-branding">
+                <div className="logo-action d-flex align-items-center">
+                  <div className="ostion-logo">
+                    <div href="/">
+                      <Link className="navbar-brand" to="/">
+                        <img
+                          className="navbar__logo"
+                          src="/images/logo.png"
+                          alt="Pave Foundation Logo"
+                          title="Pave Foundation Logo"
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="header-btn ml-auto">
+                    <div>
+                      <a
+                        className="theme-btn"
+                        href="/#donorbox"
+                        style={{ color: "white" }}
+                      >
+                        donate now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-7 col-sm-7 ostion-menu">
+                <div className="ostion-menu-innner">
+                  <div className="ostion-menu-content">
+                    <div className="navigation-top">
+                      <nav className="main-navigation">
+                        <ul>
+                          <li className="active">
+                            <Link to="/">Home</Link>
+                          </li>
 
-                <li className="sidenav__item">
-                  <Link to='/events'>Events</Link>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to='/events/givingtuesday'>Giving Tuesday Fund Drive</Link>
-                    </li>
-                    <li>
-                      <Link to='/events/2021camp'>2021 Camp</Link>
-                    </li>
-                  </ul>
-                </li>
+                          <li>
+                            <Link to="/events">Events</Link>
+                            <ul className="dropdown-menu-item">
+                              <li>
+                                <Link to="/events/givingtuesday">
+                                  Giving Tuesday Fund Drive{" "}
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/events/2021camp">2021 Camp</Link>
+                              </li>
+                            </ul>
+                          </li>
 
-                <li className="sidenav__item">
-                <Link to='/'>Get Involved</Link>
+                          <li>
+                            <Link to="#">Get Involved</Link>
+                            <ul className="dropdown-menu-item">
+                              <li>
+                                <Link to="/donate">Donate </Link>
+                              </li>
+                              <li>
+                                <Link to="/volunteer">Volunteer</Link>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <Link to="/explore">explore</Link>
+                            <ul className="dropdown-menu-item">
+                              <li>
+                                <Link to="/explore/gallery">Gallery </Link>
+                              </li>
 
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to='/donate'>Donate</Link>
-                    </li>
+                              <li>
+                                <Link to="/explore/social">Social</Link>
+                              </li>
+                            </ul>
+                          </li>
 
-                    <li>
-                      <Link to='/volunteer'>Volunteer</Link>
-                    </li>
-
-                  </ul>
-                </li>
-
-                <li className="sidenav__item">
-                  <Link>About</Link>
-
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to='/about'>Mission</Link>
-                    </li>
-                    <li>
-                      <Link to='/team'> Team</Link>
-                    </li>
-                  </ul>
-                </li>
-
-                <li className="sidenav__item">
-                  <Link to='/explore'>Explore</Link>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to='/explore/gallery'>Gallery</Link>
-                    </li>
-                    <li>
-                     <Link to='/explore/contact'>Contact</Link>
-                    </li>
-                    <li>
-                     <Link to='/explore/social'>Social</Link>
-                    </li>
-                  </ul>
-                </li>
-               
-              </ul>
-              <ul className="side-social">
-                <li>
-                  <a href="#">
-                    <i className="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-youtube-play"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-google-plus"></i>
-                  </a>
-                </li>
-              </ul>
-              <div className="side-btn">
-                <div href="/donate">
-                  <a className="theme-btn">donate now</a>
+                          <li>
+                            <Link to="/about">About</Link>
+                            <ul className="dropdown-menu-item">
+                              <li>
+                                <Link to="/about">Mission </Link>
+                              </li>
+                              <li>
+                                <Link to="/team">Team</Link>
+                              </li>
+                              <li>
+                                <Link to="/contact">Contact</Link>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div className="mobile-menu-toggle">
+                    <i className="fa fa-bars"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </header>
-      </div>
-    );
-  
+        </div>
+        <div className="side-nav-container">
+          <div className="humburger-menu">
+            <div className="humburger-menu-lines side-menu-close"></div>
+          </div>
+          <div className="side-menu-wrap">
+            <ul className="side-menu-ul">
+              <li className="sidenav__item">
+                <Link to="/">Home</Link>
+              </li>
+
+              <li className="sidenav__item">
+                <Link to="/events">Events</Link>
+                <ul className="side-sub-menu">
+                  <li>
+                    <Link to="/events/givingtuesday">
+                      Giving Tuesday Fund Drive
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/events/2021camp">2021 Camp</Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="sidenav__item">
+                <Link to="/">Get Involved</Link>
+
+                <ul className="side-sub-menu">
+                  <li>
+                    <Link to="/donate">Donate</Link>
+                  </li>
+
+                  <li>
+                    <Link to="/volunteer">Volunteer</Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="sidenav__item">
+                <Link to="/about">About</Link>
+
+                <ul className="side-sub-menu">
+                  <li>
+                    <Link to="/about">Mission</Link>
+                  </li>
+                  <li>
+                    <Link to="/team"> Team</Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="sidenav__item">
+                <Link to="/explore">Explore</Link>
+                <ul className="side-sub-menu">
+                  <li>
+                    <Link to="/explore/gallery">Gallery</Link>
+                  </li>
+                  <li>
+                    <Link to="/explore/contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link to="/explore/social">Social</Link>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul className="side-social">
+              <li>
+                <a href="https://www.facebook.com/pg/thepavefoundation/events/">
+                  <i className="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/THEPAVEFOUNDAT1?s=09">
+                  <i className="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <i className="fa fa-youtube-play"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <i className="fa fa-google-plus"></i>
+                </a>
+              </li>
+            </ul>
+            <div className="side-btn">
+              <div href="/donate">
+                <a className="theme-btn" href="/donate">
+                  donate now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
 }
 
 export default NavOne;

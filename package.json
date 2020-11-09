@@ -8,8 +8,10 @@
     "@testing-library/user-event": "^7.2.1",
     "accordion-js": "^2.8.0",
     "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
     "glightbox": "^3.0.5",
     "http-proxy-middleware": "^1.0.6",
+    "jquery": "^3.5.1",
     "netlify-lambda": "^2.0.1",
     "qs": "^6.9.4",
     "react": "^16.14.0",
@@ -20,8 +22,10 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-visibility-sensor": "^5.1.1",
+    "rfs": "^9.0.3",
+    "sass": "^1.29.0",
     "serverless-http": "^2.6.0",
-    "swiper": "^6.3.4"
+    "swiper": "^6.3.5"
   },
   "scripts": {
     "start": "react-scripts start",

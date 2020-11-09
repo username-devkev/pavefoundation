@@ -1,6 +1,49 @@
 import React from "react";
 
 const TeamArea = () => {
+  const data = [
+    {
+      className: "team-item1",
+      imgSrc: "/images/team.jpg",
+      name: "Gail Tusan Washington",
+    },
+    {
+      className: "team-item2",
+      imgSrc: "/images/team2.jpg",
+      name: "Nicholas Cotten",
+    },
+    {
+      className: "team-item3",
+      imgSrc: "/images/team3.jpg",
+      name: "Danielle Weekes",
+    },
+    {
+      className: "team-item1",
+      imgSrc: "/images/team4.jpg",
+      name: "Faron Hill",
+    },
+    {
+      className: "team-item2",
+      imgSrc: "/images/team5.jpg",
+      name: "Michele Mateno",
+    },
+    {
+      className: "team-item3",
+      imgSrc: "/images/team6.jpg",
+      name: "Desiree Pedescleaux",
+    },
+    {
+      className: "team-item1",
+      imgSrc: "/images/team7.jpg",
+      name: "Lauren Washington",
+    },
+    {
+      className: "team-item2",
+      imgSrc: "/images/team8.jpg",
+      name: "Joi Hargis",
+    },
+  ];
+
   return (
     <section className="team-area text-center">
       <div className="container">
@@ -10,160 +53,25 @@ const TeamArea = () => {
               <div className="section-icon">
                 <img src="/images/section-icon.png" alt="section-icon" />
               </div>
-              <h2 className="section__title">Our Team</h2>
-              {/* <p className="section__meta">meet profesionals</p> */}
+              <h2 className="section__title h4">Board Members</h2>
             </div>
           </div>
         </div>
         <div className="row team-content-wrap">
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item1">
-              <div className="team__img">
-                <img src="/images/team.jpg" alt="team image" />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
+          {data.map((el) => (
+            <div className="col col-lg-3 col-xl-3">
+              <div className={`team-item ${el.className}`}>
+                <div className="team__img">
+                  <img src={el.imgSrc} alt="person" />
+                </div>
+                <div className="team__title d-flex justify-content-center">
+                  <h3 className="team__title-title " style={{ color: "#fff" }}>
+                    {el.name}
+                  </h3>
                 </div>
               </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <a href="#">Gail Tusan Washington</a>
-                </h3>
-                <span className="team__title-meta">Founder</span>
-              </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item2">
-              <div className="team__img">
-                <img src="/images/team2.jpg" alt="team image" />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <a href="#">Nicholas Cotten</a>
-                </h3>
-                <span className="team__title-meta">Executive Director</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item3">
-              <div className="team__img">
-                <img src="/images/team3.jpg" alt="team image" />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <a href="#">Danielle Weekes</a>
-                </h3>
-                <span className="team__title-meta">Director of Marketing</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="team-item team-item4">
-              <div className="team__img">
-                <img src="/images/team4.jpg" alt="team image" />
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-pinterest"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="team__title">
-                <h3 className="team__title-title">
-                  <a href="#">Faron Hill</a>
-                </h3>
-                <span className="team__title-meta">Board of Directors</span>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

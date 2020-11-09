@@ -40,22 +40,22 @@ const ClientsLogoTwo = () => {
             <div className="client-logo">
               <Swiper {...params}>
                 <div className="client-logo-item">
-                  <img src="/images/client-logo.png" alt="brand image" />
+                  <img src="/images/client-logo.png" alt="brand" />
                 </div>
                 <div className="client-logo-item">
-                  <img src="/images/client-logo.png" alt="brand image" />
+                  <img src="/images/client-logo.png" alt="brand" />
                 </div>
                 <div className="client-logo-item">
-                  <img src="/images/client-logo.png" alt="brand image" />
+                  <img src="/images/client-logo.png" alt="brand" />
                 </div>
                 <div className="client-logo-item">
-                  <img src="/images/client-logo.png" alt="brand image" />
+                  <img src="/images/client-logo.png" alt="brand" />
                 </div>
                 <div className="client-logo-item">
-                  <img src="/images/client-logo.png" alt="brand image" />
+                  <img src="/images/client-logo.png" alt="brand" />
                 </div>
                 <div className="client-logo-item">
-                  <img src="/images/client-logo.png" alt="brand image" />
+                  <img src="/images/client-logo.png" alt="brand" />
                 </div>
               </Swiper>
             </div>

@@ -3,33 +3,11 @@ import React from "react";
 const HelpingArea = () => {
   return (
     <div>
-      {/* <section className="mixer-area helping-area pt-3 pb-3">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="section-heading mixer-heading">
-                <div className="section-icon">
-                  <img src="/images/section-icon.png" alt="section-icon" />
-                </div>
-                <h2 className="section__title">Contribute Today!</h2>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="helping-text-box">
-                <p className="helping__text"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      <section className="mixer-area2 helping-area2 pt-5">
+      <section className="mixer-area2 helping-area2 pt-2">
         <div className="container">
           <div className="row fun-content-wrap">
             <div className="col-lg-6">
               <div className="fun-content">
-                {/* <div className="fun-item fun-item1">
-                  <img src="/images/helping-img.jpg" alt="" />
-                </div> */}
                 <div className="section-heading p-0">
                   <div className="section-icon">
                     <img src="/images/section-icon.png" alt="section-icon" />
@@ -48,9 +26,13 @@ const HelpingArea = () => {
               </div>
             </div>
             {/* Donation */}
+            <span id="donorbox"></span>
             <div className="col-lg-6">
               <div className="helping-form p-2 pt-0">
-                <div className="section-heading d-flex flex-column justify-content-center align-content-center">
+                <div
+                  className="section-heading d-flex flex-column justify-content-center align-content-center"
+                  style={{ textAlign: "center" }}
+                >
                   <div className="section-icon">
                     <img src="/images/section-icon.png" alt="section-icon" />
                   </div>
@@ -60,24 +42,21 @@ const HelpingArea = () => {
                   >
                     Make a Donation
                   </h2>
-                  <div id="donorbox-homepage" className='row' style={{display:'flex', justifyContent:'center'}}>
-                  <iframe
-                    allowpaymentrequest=""
-                    frameborder="0"
-                    height="450px"
-                    name="donorbox"
-                    scrolling="no"
-                    seamless="seamless"
-                    src="https://donorbox.org/embed/kevdev-giving-tuesday"
-                    style={{
-                      width: "100%",
-                      maxWidth: "500px",
-                      minWidth: "250px",
-                      height: "450px!important",
-                      margin:0,
-                      padding:0
-                    }}
-                  ></iframe>
+                  <div id="">
+                    <iframe
+                      title="donation"
+                      allowpaymentrequest=""
+                      frameBorder="0"
+                      name="donorbox"
+                      scrolling="no"
+                      width="100%"
+                      seamless="seamless"
+                      src="https://donorbox.org/embed/kevdev-giving-tuesday"
+                      style={{
+                        maxWidth: "450px",
+                        minWidth: "320px",
+                      }}
+                    ></iframe>
                   </div>
                 </div>
               </div>
