@@ -12,7 +12,6 @@ const HomePage = () => {
     <Layout pageTitle="Pave Foundation">
       <NavOne />
       <Carousel />
-
       <ServiceArea />
       <HelpingArea />
       <TeamArea />

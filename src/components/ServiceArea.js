@@ -32,7 +32,7 @@ const ServiceArea = () => {
     <section className="service-area text-center pb-3 pt-3">
       {/* render hearts */}
       {[...Array(11)].map((el, i) => {
-        if (i === 0) return;
+        if (i === 0) return <div></div>;
         return (
           <img
             src={`/images/heart-icon${i}.png`}
