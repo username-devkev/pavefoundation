@@ -3,7 +3,7 @@ import React from "react";
 const PageHeader = (props) => {
   return (
     <section
-      className="breadcrumb-area"
+      className="breadcrumb-area pt-3 pb-3"
       style={{
         backgroundColor: props.backgroundColor,
       }}

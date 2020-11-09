@@ -28,7 +28,7 @@ export default function EventsDetailPage({
               <div className="blog-content">
                 <div className="blog-item">
                   <div className="blog-img">
-                    <img src={imgSrc} alt={title} />
+                    <img src={imgSrc} alt={title} className="img-fluid" />
                     <span className="blog__tag">
                       <span className="date__num-text">{day}</span>
                       <span className="date__mon-text">{month}</span>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Donate = () => {
   return (
-    <div className="col-lg-12">
+    <div className="col-lg-6 col-md-4 col-xl-6">
       <div className="helping-form p-2 pt-0">
         <div
           className="section-heading d-flex flex-column justify-content-center align-content-center"

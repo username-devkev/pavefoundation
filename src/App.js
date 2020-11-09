@@ -8,7 +8,7 @@ import Index from "./pages/index";
 import About from "./pages/about";
 import EventsPage from "./pages/EventsPage";
 import EventsDetailPage from "./pages/EventsDetailPage";
-import Donate from "./pages/donate";
+import Donate from "./pages/DonatePage";
 import Volunteer from "./pages/volunteer";
 import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";

@@ -719,10 +719,13 @@
   /*=== .breadcrumb-area ===*/
   .breadcrumb-area .breadcrumb-content {
     padding-top: 90px;
+    width: 100%;
+    margin: 0 auto;
   }
   .breadcrumb-area .breadcrumb-content .breadcrumb__title {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
+    width: 100%;
   }
   .hiw-area .col,
   .service-area .col,
