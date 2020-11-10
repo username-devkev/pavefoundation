@@ -444,6 +444,14 @@
     767px
 ------------------------------*/
 @media (max-width: 767px) {
+  .breadcrumb-area .breadcrumb-content .breadcrumb__title {
+    font-size: 40px;
+    line-height: 50px;
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+  }
   .slider-area .single-slide-item .col-md-7 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -685,6 +693,11 @@
     480px
 ------------------------------*/
 @media (max-width: 480px) {
+  .breadcrumb-area .breadcrumb-content .breadcrumb__title {
+    font-size: 24px;
+    line-height: 35px;
+    width: 100%;
+  }
   .slider-area .single-slide-item {
     height: 750px;
   }
@@ -872,15 +885,20 @@
   }
 }
 /*-----------------------------
-    375px
+    @media , media 375px
 ------------------------------*/
 @media (min-width: 320px) and (max-width: 479px) {
 }
 
 /*-----------------------------
-    375px
+   @media , media 375px
 ------------------------------*/
 @media (max-width: 375px) {
+  .breadcrumb-area .breadcrumb-content .breadcrumb__title {
+    font-size: 24px;
+    line-height: 35px;
+    width: 100%;
+  }
   .section-heading .section__title {
     font-size: 36px;
     line-height: 38px;
@@ -959,6 +977,12 @@
     li {
     margin-right: 15px;
   }
+  .breadcrumb-area .breadcrumb-content .breadcrumb__title {
+    font-size: 24px;
+    line-height: 35px;
+    width: 100%;
+  }
+
   .slider-area .single-slide-item {
     height: 600px;
   }
