@@ -16,6 +16,8 @@ export default function EventsDetailPage({
   title,
   paragraphOne,
   paragraphTwo,
+  formComponent,
+  blogTag,
 }) {
   return (
     <Layout>
@@ -25,11 +27,19 @@ export default function EventsDetailPage({
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="blog-content">
-                <div className="blog-item">
-                  <div className="blog-img">
-                    <img src={imgSrc} alt={title} className="img-fluid" />
-                    <span className="blog__tag">
+              <div className="blog-content" style={{ minHeight: "200px" }}>
+                <div className="blog-item h-100">
+                  <div
+                    className="blog-img img-fluid"
+                    style={{ minHeight: "200px" }}
+                  >
+                    <img
+                      src={imgSrc}
+                      alt={title}
+                      className="img-fluid"
+                      style={{ minHeight: "200px" }}
+                    />
+                    <span className={`blog__tag blog__tag${blogTag}`}>
                       <span className="date__num-text">{day}</span>
                       <span className="date__mon-text">{month}</span>
                     </span>
@@ -50,7 +60,7 @@ export default function EventsDetailPage({
           </div>
         </div>
       </section>
-
+      {formComponent}
       <Footer />
     </Layout>
   );

@@ -3,7 +3,7 @@ import React from "react";
 const ServiceArea = () => {
   const sectionData = [
     {
-      icon: "fa fa-microscope",
+      icon: "fa fa-microscope ",
       title: "Science",
       paragraph: "NEEDS TEXT",
     },
@@ -61,15 +61,15 @@ const ServiceArea = () => {
         <div className="row service-wrap">
           {sectionData.map((el, i) => {
             return (
-              <div className="col-xs-4 col-sm-4 col-lg-3 col-xl-3 mb-2">
-                <div className={`service-item service-item${i + 1}`}>
-                  <div className="service-item-inner">
+              <div className="col-4">
+                <div className={`service-item service-item${i + 1} `}>
+                  <div className="service-item-inner  mb-2">
                     <div className="service-icon">
                       <i className={el.icon}></i>
                     </div>
                     <div className="service-content">
                       <h4 className="service__title">{el.title}</h4>
-                      <p className="service__desc">{el.paragraph}</p>
+                      {/* <p className="service__desc">{el.paragraph}</p> */}
                     </div>
                   </div>
                 </div>

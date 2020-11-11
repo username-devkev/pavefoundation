@@ -4072,6 +4072,11 @@ a:hover {
   -o-transform: skew(-12deg, 0deg);
   transform: skew(-12deg, 0deg);
 }
+.event-detail-area .blog-content .blog-item .blog-img .blog__tag1,
+.event-detail-area .blog-content .blog-item .blog-img .blog__tag1:after {
+  background-color: #26c5c5;
+}
+
 .event-detail-area .blog-content .blog-item .blog-img .blog__tag span {
   display: block;
 }

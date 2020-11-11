@@ -7,23 +7,15 @@ const TeamArea = () => {
       imgSrc: "/images/team.jpg",
       name: "Gail Tusan Washington",
     },
+
     {
       className: "team-item2",
-      imgSrc: "/images/team2.jpg",
-      name: "Nicholas Cotten",
+      imgSrc: "/images/team8.jpg",
+      name: "Joi Hargis",
     },
-    {
-      className: "team-item3",
-      imgSrc: "/images/team3.jpg",
-      name: "Danielle Weekes",
-    },
+
     {
       className: "team-item1",
-      imgSrc: "/images/team4.jpg",
-      name: "Faron Hill",
-    },
-    {
-      className: "team-item2",
       imgSrc: "/images/team5.jpg",
       name: "Michele Mateno",
     },
@@ -38,9 +30,19 @@ const TeamArea = () => {
       name: "Lauren Washington",
     },
     {
+      className: "team-item3",
+      imgSrc: "/images/team3.jpg",
+      name: "Danielle Weekes",
+    },
+    {
       className: "team-item2",
-      imgSrc: "/images/team8.jpg",
-      name: "Joi Hargis",
+      imgSrc: "/images/team2.jpg",
+      name: "Nicholas Cotten",
+    },
+    {
+      className: "team-item1",
+      imgSrc: "/images/team4.jpg",
+      name: "Faron Hill",
     },
   ];
 

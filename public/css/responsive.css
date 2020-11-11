@@ -729,6 +729,18 @@
   .entry-area:after {
     height: 230px;
   }
+  /*=== .service__title ===*/
+  .service-area
+    .service-wrap
+    .service-item
+    .service-item-inner
+    .service-content
+    .service__title {
+    font-size: 12px;
+  }
+  .service-icon i {
+    font-size: 8px;
+  }
   /*=== .breadcrumb-area ===*/
   .breadcrumb-area .breadcrumb-content {
     padding-top: 90px;
@@ -966,7 +978,7 @@
   }
 }
 /*-----------------------------
-    320px
+    320px 
 ------------------------------*/
 @media (max-width: 320px) {
   .header-area
@@ -1019,6 +1031,12 @@
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    width: 100%;
+  }
+  .donorbox-mobile {
+    padding: 0;
+    margin: 0;
+    width: 320px;
   }
   .mixer-area2 .fun-content-slide .fun-slide-item .funslide__text {
     font-size: 28px;

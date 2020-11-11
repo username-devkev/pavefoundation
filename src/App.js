@@ -30,7 +30,7 @@ function App() {
       <Route path="/events/2021camp">
         <EventsDetailPage
           eventName="2021 Summer STEAM Camp"
-          backgroundColor="#5eace7"
+          backgroundColor="#fe545c"
           month="July"
           day="4"
           year="2021"
@@ -41,13 +41,15 @@ function App() {
           startingTime="6:00AM to 6:00PM"
           location="Online!"
           contactEmail="thepavefoundation@gmail.com"
+          formComponent={<div>FORM</div>}
+          blogTag={""}
         />
       </Route>
 
       <Route path="/events/givingtuesday">
         <EventsDetailPage
           eventName="2020 Giving Tuesday Fund Drive"
-          backgroundColor="#fca845"
+          backgroundColor="#26c5c5"
           month="Dec"
           day="1"
           year="2020"
@@ -59,6 +61,7 @@ function App() {
           startingTime="6:00AM to 6:00PM"
           location="Online!"
           contactEmail="thepavefoundation@gmail.com"
+          blogTag={1}
         />
       </Route>
 

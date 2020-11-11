@@ -33,7 +33,7 @@ export default function Carousel() {
       id="myCarousel"
       className="carousel slide"
       data-ride="carousel"
-      data-interval={30000}
+      data-interval={3000}
     >
       {/* <ol className="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -53,7 +53,7 @@ export default function Carousel() {
             >
               <div
                 className="container d-flex flex-column justify-content-center align-items-center"
-                style={{ minHeight: "300px", maxHeight: "500px" }}
+                style={{ minHeight: "300px", maxHeight: "400px" }}
               >
                 <img
                   className=" carousel__img img-responsive bd-placeholder-img d-block w-100"
@@ -72,7 +72,7 @@ export default function Carousel() {
 
               <div className="container"> */}
                 <div className="carousel-caption mb-2" style={{}}>
-                  <h1 className="carousel__title">{el.title}</h1>
+                  <h1 className="carousel__title w-100">{el.title}</h1>
                   <p className="carousel__desc ">{el.body}</p>
                   <p>
                     <a
