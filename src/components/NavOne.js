@@ -50,7 +50,7 @@ function NavOne() {
                       <li>
                         <a href="/">
                           <i className="fa fa-envelope"></i>
-                          info@pavefoundation.org
+                          thepavefoundation@gmail.com
                         </a>
                       </li>
                     </ul>
@@ -100,9 +100,9 @@ function NavOne() {
                 <div className="logo-action d-flex align-items-center">
                   <div className="ostion-logo">
                     <div href="/">
-                      <Link className="navbar-brand" to="/">
+                      <Link className="navbar-brand p-0" to="/">
                         <img
-                          className="navbar__logo"
+                          className="navbar__logo img-fluid"
                           src="/images/logo.png"
                           alt="Pave Foundation Logo"
                           title="Pave Foundation Logo"

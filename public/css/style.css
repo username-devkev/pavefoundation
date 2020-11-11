@@ -5137,9 +5137,9 @@ a:hover {
   margin-top: 51px;
 }
 .team-area .team-content-wrap .team-item {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px;
   min-width: 180px;
-  max-width: 220px;
+  max-width: 220px; */
 }
 @media (max-width: 420px) {
   .team-item,

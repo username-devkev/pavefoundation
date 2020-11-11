@@ -976,6 +976,13 @@
     .post__boxed {
     padding: 40px;
   }
+  .navbar__logo {
+    width: 100px;
+    height: auto;
+  }
+  .header-menu-action {
+    /* height: 85px; */
+  }
 }
 /*-----------------------------
     320px 

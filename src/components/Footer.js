@@ -86,8 +86,8 @@ class Footer extends Component {
                   <ul className="contact__info">
                     <li>P.O. Box 19572 Atlanta, GA 30325</li>
                     <li>
-                      <a href="mailto:info@pavefoundation.org">
-                        info@pavefoundation.org
+                      <a href="mailto:thepavefoundation@gmail.com">
+                        thepavefoundation@gmail.com
                       </a>
                     </li>
                     {/* <li>

@@ -52,13 +52,14 @@ const ServiceArea = () => {
                 <img src="/images/section-icon.png" alt="section-icon" />
               </div>
               <h2 className="section__title">
-                We prepare African American girls to achieve success in STEAM
+                Paving the way for African American girls to achieve success in
+                STEAM careers.
               </h2>
             </div>
           </div>
         </div>
 
-        <div className="row service-wrap">
+        <div className="row service-wrap ">
           {sectionData.map((el, i) => {
             return (
               <div className="col-4">

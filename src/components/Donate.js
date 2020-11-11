@@ -1,4 +1,5 @@
 import React from "react";
+import DonorBox from "./DonorBox";
 
 const Donate = () => {
   return (
@@ -17,22 +18,7 @@ const Donate = () => {
           >
             Make a Donation
           </h2>
-          <div id="">
-            <iframe
-              title="donation"
-              allowpaymentrequest=""
-              frameBorder="0"
-              name="donorbox"
-              scrolling="no"
-              width="100%"
-              seamless="seamless"
-              src="https://donorbox.org/embed/kevdev-giving-tuesday"
-              style={{
-                maxWidth: "450px",
-                minWidth: "320px",
-              }}
-            ></iframe>
-          </div>
+          <DonorBox />
         </div>
       </div>
     </div>
