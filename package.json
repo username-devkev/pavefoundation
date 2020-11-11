@@ -23,15 +23,14 @@
     "react-visibility-sensor": "^5.1.1",
     "rfs": "^9.0.3",
     "sass": "^1.29.0",
-    "serverless-http": "^2.6.0",
     "swiper": "^6.3.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev":"react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild":"npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
