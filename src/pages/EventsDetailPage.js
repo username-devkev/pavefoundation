@@ -55,7 +55,7 @@ export default function EventsDetailPage({
               </div>
             </div>
 
-            <Donate />
+            {formComponent}
           </div>
         </div>
       </section>
