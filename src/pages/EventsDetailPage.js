@@ -4,7 +4,6 @@ import NavOne from "../components/NavOne";
 import Donate from "../components/Donate";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
-import EventsDetail from "../components/EventsDetail";
 
 export default function EventsDetailPage({
   eventName,
