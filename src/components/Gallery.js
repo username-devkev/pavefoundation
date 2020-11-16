@@ -82,14 +82,6 @@ const Gallery = () => {
               </a>
             </div>
           </div>
-          <div className="col-lg-4 col-sm-6">
-            <div className="gallery-item">
-              <img src="/images/gallery-img12.jpg" alt="" />
-              <a href="images/gallery-img12.jpg" className="glightbox">
-                <span className="gallery-icon"></span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
