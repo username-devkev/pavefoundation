@@ -29,7 +29,7 @@ const Gallery = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="gallery-item">
               <img src="/images/gallery-img5.jpg" alt="" />
-              <a href="images/gallery-img5.jpg" className="glightbox">
+              <a href="/images/gallery-img5.jpg" className="glightbox">
                 <span className="gallery-icon"></span>
               </a>
             </div>
@@ -37,7 +37,7 @@ const Gallery = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="gallery-item">
               <img src="/images/gallery-img6.jpg" alt="" />
-              <a href="images/gallery-img6.jpg" className="glightbox">
+              <a href="/images/gallery-img6.jpg" className="glightbox">
                 <span className="gallery-icon"></span>
               </a>
             </div>
@@ -45,7 +45,7 @@ const Gallery = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="gallery-item">
               <img src="/images/gallery-img7.jpg" alt="" />
-              <a href="images/gallery-img7.jpg" className="glightbox">
+              <a href="/images/gallery-img7.jpg" className="glightbox">
                 <span className="gallery-icon"></span>
               </a>
             </div>
@@ -53,7 +53,7 @@ const Gallery = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="gallery-item">
               <img src="/images/gallery-img8.jpg" alt="" />
-              <a href="images/gallery-img8.jpg" className="glightbox">
+              <a href="/images/gallery-img8.jpg" className="glightbox">
                 <span className="gallery-icon"></span>
               </a>
             </div>
@@ -61,7 +61,7 @@ const Gallery = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="gallery-item">
               <img src="/images/gallery-img9.jpg" alt="" />
-              <a href="images/gallery-img9.jpg" className="glightbox">
+              <a href="/images/gallery-img9.jpg" className="glightbox">
                 <span className="gallery-icon"></span>
               </a>
             </div>
@@ -69,7 +69,7 @@ const Gallery = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="gallery-item">
               <img src="/images/gallery-img10.jpg" alt="" />
-              <a href="images/gallery-img10.jpg" className="glightbox">
+              <a href="/images/gallery-img10.jpg" className="glightbox">
                 <span className="gallery-icon"></span>
               </a>
             </div>
@@ -77,7 +77,7 @@ const Gallery = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="gallery-item">
               <img src="/images/gallery-img11.jpg" alt="" />
-              <a href="images/gallery-img11.jpg" className="glightbox">
+              <a href="/images/gallery-img11.jpg" className="glightbox">
                 <span className="gallery-icon"></span>
               </a>
             </div>

@@ -5,13 +5,13 @@ import { createBrowserHistory } from "history";
 
 // pages
 import HomePage from "./pages/HomePage";
-import About from "./pages/about";
+import AboutPage from "./pages/AboutPage";
 import EventsPage from "./pages/EventsPage";
 import EventsDetailPage from "./pages/EventsDetailPage";
 import Donate from "./pages/DonatePage";
 import VolunteerPage from "./pages/VolunteerPage";
-import Gallery from "./pages/gallery";
-import Contact from "./pages/contact";
+import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
 import DonorBox from "./components/DonorBox";
 
 import CampRegisterForm from "./components/CampRegisterForm";
@@ -77,15 +77,15 @@ function App() {
       </Route>
 
       <Route path="/explore/gallery">
-        <Gallery />
+        <GalleryPage />
       </Route>
 
       <Route path="/about">
-        <About />
+        <AboutPage />
       </Route>
 
       <Route path="/contact">
-        <Contact />
+        <ContactPage />
       </Route>
     </Router>
   );

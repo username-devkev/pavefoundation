@@ -12,33 +12,31 @@ const VolunteerForm = () => {
   const [response, setResponse] = useState(null);
 
   function handleSubmit() {
-    // axios
-    //   .post("http://localhost:5000/email", {
-    //     emailAddress: email,
-    //     firstName:firstName,
-    //     lastName:lastName,
-    //     phoneNumber:phone,
-    //     steamField:steamField;
-    //   })
-    //   .then((res) => {
-    //     const { status } = res;
-    //     if (status === 200) {
-    //       setResponse({
-    //         status: 200,
-    //         text: "Thank You for RSVP",
-    //       });
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-    console.log("submitted");
-    console.log(firstName, lastName, email, phone, steamField);
+    axios
+      .post("http://localhost:5000/volunteer", {
+        emailAddress: email,
+        firstName: firstName,
+        lastName: lastName,
+        phoneNumber: phone,
+        steamField: steamField,
+      })
+      .then((res) => {
+        const { status } = res;
+        if (status === 200) {
+          setResponse({
+            status: 200,
+            text: "Thank You for RSVP",
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   if (!response || response.status === 400) {
     return (
-      <div className="col-lg-6 col-sm-12 col-xs-12 col-md-12 m-3">
+      <div className="col-6">
         <div className="helping-form">
           <div className="section-heading d-flex flex-column align-items-center justify-contents-center">
             <div className="section-icon">
@@ -107,7 +105,12 @@ const VolunteerForm = () => {
                   </div>
                 </div>
                 <div className="col-lg-12">
-                  <select name="steamField" onChange={(e) => setSteamField(e)}>
+                  <label className="h5 mr-3">STEAM Field: </label>
+                  <select
+                    name="steamField"
+                    onChange={(e) => setSteamField(e)}
+                    style={{ height: "50px", padding: "5px" }}
+                  >
                     <option value="science">Science</option>
                     <option value="technology">Technology</option>
                     <option value="engineering">Engineering</option>
@@ -116,7 +119,7 @@ const VolunteerForm = () => {
                   </select>
                 </div>
 
-                <div className="col-lg-12">
+                <div className="col-lg-12 mt-3 mb-3">
                   <button
                     onClick={handleSubmit}
                     className="theme-btn submit__btn"
@@ -135,7 +138,7 @@ const VolunteerForm = () => {
   if (response.status === 200) {
     return (
       <div>
-        <h1 style={{ color: "#FFF" }}>Thank You for Your Volunteering! b</h1>
+        <h1 className="h1">Thank You for Your Volunteering! b</h1>
       </div>
     );
   }

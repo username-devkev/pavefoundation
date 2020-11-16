@@ -10,10 +10,14 @@ const VolunteerPage = () => {
   return (
     <Layout pageTitle="Oxpitan | Volunteer">
       <NavOne />
-      <PageHeader title="become a volunteer" />
-      <div className="mt-5 mb-5"></div>
-      <MissionStatement />
-      <VolunteerForm />
+      <PageHeader title="become a volunteer" backgroundColor="#fdac34" />
+      <div className="container">
+        <div className="row pt-5">
+          <MissionStatement />
+          <VolunteerForm />
+        </div>
+      </div>
+
       <Footer />
     </Layout>
   );

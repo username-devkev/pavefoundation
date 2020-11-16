@@ -3,16 +3,17 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
 
-const ContactPage = () => {
+const GalleryPage = () => {
   return (
-    <Layout pageTitle="Oxpitan | Contact">
+    <Layout pageTitle="Oxpitan | Gallery">
       <NavOne />
-      <PageHeader title="Contact" />
-
+      <PageHeader title="Gallery" backgroundColor="#5eace7" />
+      <Gallery />
       <Footer />
     </Layout>
   );
 };
 
-export default ContactPage;
+export default GalleryPage;

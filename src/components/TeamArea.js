@@ -53,7 +53,7 @@ const TeamArea = () => {
   return (
     <section className="team-area text-center">
       <div className="container">
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-lg-8 mx-auto">
             <div className="section-heading">
               <div className="section-icon">
@@ -65,9 +65,7 @@ const TeamArea = () => {
         </div>
         <div className="row team-content-wrap">
           {data.map((el, i) => (
-            <div
-              className={`team-item ${el.className} col-6 col-sm-6 col-xs-6 col-md-4 col-lg-4 col-xl-4 mb-4`}
-            >
+            <div className={`team-item ${el.className} col-4  mb-4`}>
               <img src={el.imgSrc} alt="person" className="img-fluid" />
               <div className="team__title d-flex justify-content-center ">
                 <h3

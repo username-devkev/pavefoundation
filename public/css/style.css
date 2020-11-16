@@ -5218,6 +5218,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 200px;
+  margin: 0 auto;
 }
 .team-area .team-content-wrap .team-item .team__title:before,
 .team-area .team-content-wrap .team-item .team__title:after {

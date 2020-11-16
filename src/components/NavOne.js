@@ -164,10 +164,6 @@ function NavOne() {
                               <li>
                                 <Link to="/explore/gallery">Gallery </Link>
                               </li>
-
-                              <li>
-                                <Link to="/explore/social">Social</Link>
-                              </li>
                             </ul>
                           </li>
 
@@ -175,10 +171,10 @@ function NavOne() {
                             <Link to="/about">About</Link>
                             <ul className="dropdown-menu-item">
                               <li>
-                                <Link to="/about">Mission </Link>
+                                <Link to="/about#aboutMission">Mission </Link>
                               </li>
                               <li>
-                                <Link to="/team">Team</Link>
+                                <Link to="/about#aboutTeam">Team</Link>
                               </li>
                               <li>
                                 <Link to="/contact">Contact</Link>
@@ -240,10 +236,10 @@ function NavOne() {
 
                 <ul className="side-sub-menu">
                   <li>
-                    <Link to="/about">Mission</Link>
+                    <Link to="/about#aboutMission">Mission</Link>
                   </li>
                   <li>
-                    <Link to="/team"> Team</Link>
+                    <Link to="/about#aboutTeam"> Team</Link>
                   </li>
                 </ul>
               </li>
