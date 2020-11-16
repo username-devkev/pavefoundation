@@ -14,7 +14,7 @@ import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
 import DonorBox from "./components/DonorBox";
 
-import CampResgisterForm from "./components/CampRegisterForm";
+import CampRegisterForm from "./components/CampRegisterForm";
 
 //app file w/ react-router
 const history = createBrowserHistory();
@@ -43,7 +43,7 @@ function App() {
           startingTime="6:00AM to 6:00PM"
           location="Online!"
           contactEmail="thepavefoundation@gmail.com"
-          formComponent={<CampResgisterForm />}
+          formComponent={<CampRegisterForm />}
           blogTag={""}
         />
       </Route>

@@ -103,7 +103,7 @@ function NavOne() {
                       <Link className="navbar-brand p-0" to="/">
                         <img
                           className="navbar__logo img-fluid"
-                          src="/images/logo.png"
+                          src="/images/logo3.png"
                           alt="Pave Foundation Logo"
                           title="Pave Foundation Logo"
                         />
