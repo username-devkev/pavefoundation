@@ -12,11 +12,11 @@ function NavOne() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 100 && window.scrollY < 1400) {
+    if (window.scrollY > 100 && window.scrollY < 800) {
       setSticky(true);
     } else if (window.scrollY < 100) {
       setSticky(false);
-    } else if (window.scrollY > 1800) {
+    } else if (window.scrollY > 801) {
       setSticky(false);
     }
   };
