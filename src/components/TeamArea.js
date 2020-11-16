@@ -66,12 +66,12 @@ const TeamArea = () => {
         <div className="row team-content-wrap">
           {data.map((el, i) => (
             <div
-              className={`team-item ${el.className} col-6 col-sm-6 col-xs-6 col-md-3 col-lg-3 col-xl-3 mb-4`}
+              className={`team-item ${el.className} col-6 col-sm-6 col-xs-6 col-md-4 col-lg-4 col-xl-4 mb-4`}
             >
               <img src={el.imgSrc} alt="person" className="img-fluid" />
               <div className="team__title d-flex justify-content-center ">
                 <h3
-                  className="team__title-title  text-align-center"
+                  className="team__title-title  text-align-center pl-1 pr-2 w-80"
                   style={{ color: "#fff" }}
                 >
                   {el.name}

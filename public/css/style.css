@@ -5241,7 +5241,7 @@ a:hover {
 }
 
 .team-area .team-content-wrap .team-item .team__title .team__title-title {
-  font-size: 14px;
+  font-size: 12px;
   width: 100%;
   text-transform: capitalize;
   font-weight: 800;
@@ -6365,7 +6365,7 @@ a:hover {
 
 /*==== footer-area ===*/
 .footer-area {
-  background-image: url("../images/footer-bg.jpg");
+  background-color: #343434;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
