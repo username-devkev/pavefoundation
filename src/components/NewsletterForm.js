@@ -7,7 +7,7 @@ export default function NewsletterForm() {
 
   function handleSubmit() {
     axios
-      .post("http://localhost:5000/email", {
+      .post("https://pavefoundation-api.herokuapp.com/email", {
         emailAddress: email,
       })
       .then((res) => {

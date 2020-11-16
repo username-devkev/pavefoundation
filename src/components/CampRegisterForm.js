@@ -13,36 +13,27 @@ export default function CampResgisterForm() {
   const [response, setResponse] = useState(null);
 
   function handleSubmit() {
-    console.log(
-      attendeeFirst,
-      attendeeLast,
-      attendeeAge,
-      guardianFullName,
-      guardianPhone,
-      guardianEmail
-    );
-
-    // axios
-    //   .post("http://localhost:5000/campregister", {
-    //     attendeeFirst: attendeeFirst,
-    //     attendeeLast: attendeeLast,
-    //     attendeeAge: attendeeAge,
-    //     guardianFullName: guardianFullName,
-    //     guardianPhone: guardianPhone,
-    //     guardianEmail: guardianEmail,
-    //   })
-    //   .then((res) => {
-    //     const { status } = res;
-    //     if (status === 200) {
-    //       setResponse({
-    //         status: 200,
-    //         text: "Thank You for RSVP",
-    //       });
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+    axios
+      .post("http://localhost:5000/campregister", {
+        attendeeFirst: attendeeFirst,
+        attendeeLast: attendeeLast,
+        attendeeAge: attendeeAge,
+        guardianFullName: guardianFullName,
+        guardianPhone: guardianPhone,
+        guardianEmail: guardianEmail,
+      })
+      .then((res) => {
+        const { status } = res;
+        if (status === 200) {
+          setResponse({
+            status: 200,
+            text: "Thank You for RSVP",
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   if (!response || response.status === 400) {
@@ -130,6 +121,14 @@ export default function CampResgisterForm() {
             </form>
           </div>
         </div>
+      </div>
+    );
+  }
+  if (response.status === 200) {
+    return (
+      <div>
+        <h1 style={{ color: "#FFF" }}>Thank You For Your Interest</h1>
+        <h2 style={{ color: "#FFF" }}>Please check your Email</h2>
       </div>
     );
   }

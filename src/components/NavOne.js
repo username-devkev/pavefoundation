@@ -16,7 +16,7 @@ function NavOne() {
       setSticky(true);
     } else if (window.scrollY < 100) {
       setSticky(false);
-    } else if (window.scrollY > 801) {
+    } else if (window.scrollY > 800) {
       setSticky(false);
     }
   };
@@ -100,7 +100,7 @@ function NavOne() {
                 <div className="logo-action d-flex align-items-center">
                   <div className="ostion-logo">
                     <div href="/">
-                      <Link className="navbar-brand p-0" to="/">
+                      <Link className="navbar-brand" to="/">
                         <img
                           className="navbar__logo img-fluid"
                           src="/images/logo3.png"
@@ -189,7 +189,7 @@ function NavOne() {
                       </nav>
                     </div>
                   </div>
-                  <div className="mobile-menu-toggle">
+                  <div className="mobile-menu-toggle ">
                     <i className="fa fa-bars"></i>
                   </div>
                 </div>
