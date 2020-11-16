@@ -24,19 +24,16 @@ export default function EventsDetailPage({
       <PageHeader title={eventName} backgroundColor={backgroundColor} />
       <section className="event-detail-area pt-2 pb-2">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="blog-content" style={{ minHeight: "200px" }}>
+          <div className="row d-flex justify-content-center align-items-start">
+            <div className="col-lg-8">
+              <div className="blog-content mb-3" style={{ height: "350px" }}>
                 <div className="blog-item h-100">
-                  <div
-                    className="blog-img img-fluid"
-                    style={{ minHeight: "200px" }}
-                  >
+                  <div className="blog-img" style={{ height: "350px" }}>
                     <img
                       src={imgSrc}
                       alt={title}
                       className="img-fluid"
-                      style={{ minHeight: "200px" }}
+                      style={{ height: "350px" }}
                     />
                     <span className={`blog__tag blog__tag${blogTag}`}>
                       <span className="date__num-text">{day}</span>
@@ -59,7 +56,7 @@ export default function EventsDetailPage({
           </div>
         </div>
       </section>
-      {formComponent}
+
       <Footer />
     </Layout>
   );

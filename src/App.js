@@ -4,15 +4,17 @@ import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 // pages
-import Index from "./pages/index";
+import HomePage from "./pages/HomePage";
 import About from "./pages/about";
 import EventsPage from "./pages/EventsPage";
 import EventsDetailPage from "./pages/EventsDetailPage";
 import Donate from "./pages/DonatePage";
-import Volunteer from "./pages/volunteer";
+import VolunteerPage from "./pages/VolunteerPage";
 import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
-import Team from "./pages/team";
+import DonorBox from "./components/DonorBox";
+
+import CampResgisterForm from "./components/CampRegisterForm";
 
 //app file w/ react-router
 const history = createBrowserHistory();
@@ -20,7 +22,7 @@ function App() {
   return (
     <Router history={history}>
       <Route exact path="/">
-        <Index />
+        <HomePage />
       </Route>
 
       <Route exact path="/events">
@@ -37,11 +39,11 @@ function App() {
           imgSrc="/images/slider3.jpg"
           title="Event Details"
           paragraphOne="Our summer camp is focused on acheiving success in STEAM (Science, Technology, Engineering, and Mathematics). Providing them with academic and enrichment opportunities."
-          paragraphTwo="Please join us in 2021 to help ignit their intellectual curiosity, develop self-confidence and instill a passion for protecting the planet by equitably distributing it's resources."
+          paragraphTwo="Please join us in 2021 to help ignite their intellectual curiosity, develop self-confidence and instill a passion for protecting the planet by equitably distributing it's resources."
           startingTime="6:00AM to 6:00PM"
           location="Online!"
           contactEmail="thepavefoundation@gmail.com"
-          formComponent={<div>FORM</div>}
+          formComponent={<CampResgisterForm />}
           blogTag={""}
         />
       </Route>
@@ -62,6 +64,7 @@ function App() {
           location="Online!"
           contactEmail="thepavefoundation@gmail.com"
           blogTag={1}
+          formComponent={<DonorBox />}
         />
       </Route>
 
@@ -70,7 +73,7 @@ function App() {
       </Route>
 
       <Route path="/volunteer">
-        <Volunteer />
+        <VolunteerPage />
       </Route>
 
       <Route path="/explore/gallery">
@@ -80,9 +83,7 @@ function App() {
       <Route path="/about">
         <About />
       </Route>
-      <Route path="/team">
-        <Team />
-      </Route>
+
       <Route path="/contact">
         <Contact />
       </Route>

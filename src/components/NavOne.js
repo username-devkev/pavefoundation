@@ -48,7 +48,7 @@ function NavOne() {
                   <div className="info-box info-box-2 d-flex align-items-stretch justify-content-around">
                     <ul className="top-action-list d-flex align-items-stretch">
                       <li>
-                        <a href="/">
+                        <a href="/" style={{ textTransform: "lowercase" }}>
                           <i className="fa fa-envelope"></i>
                           thepavefoundation@gmail.com
                         </a>
@@ -159,7 +159,7 @@ function NavOne() {
                             </ul>
                           </li>
                           <li>
-                            <Link to="/explore">explore</Link>
+                            <Link to="#">explore</Link>
                             <ul className="dropdown-menu-item">
                               <li>
                                 <Link to="/explore/gallery">Gallery </Link>
@@ -249,16 +249,13 @@ function NavOne() {
               </li>
 
               <li className="sidenav__item">
-                <Link to="/explore">Explore</Link>
+                <Link to="#">Explore</Link>
                 <ul className="side-sub-menu">
                   <li>
                     <Link to="/explore/gallery">Gallery</Link>
                   </li>
                   <li>
                     <Link to="/explore/contact">Contact</Link>
-                  </li>
-                  <li>
-                    <Link to="/explore/social">Social</Link>
                   </li>
                 </ul>
               </li>

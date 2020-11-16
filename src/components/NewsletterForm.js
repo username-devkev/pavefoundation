@@ -5,7 +5,7 @@ export default function NewsletterForm() {
   const [email, setEmail] = useState(null);
   const [response, setResponse] = useState(null);
 
-  function onSubmit() {
+  function handleSubmit() {
     axios
       .post("http://localhost:5000/email", {
         emailAddress: email,
@@ -15,7 +15,7 @@ export default function NewsletterForm() {
         if (status === 200) {
           setResponse({
             status: 200,
-            text: "Thank You for Subscribing",
+            text: "Thank You for RSVP",
           });
         }
       })
@@ -58,7 +58,7 @@ export default function NewsletterForm() {
             type="submit"
             style={{ width: "150px" }}
             value="submit"
-            onClick={() => onSubmit()}
+            onClick={() => handleSubmit()}
           />
         </div>
       </div>

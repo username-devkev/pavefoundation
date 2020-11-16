@@ -7,7 +7,11 @@ const TeamArea = () => {
       imgSrc: "/images/team.jpg",
       name: "Gail Tusan Washington",
     },
-
+    {
+      className: "team-item3",
+      imgSrc: "/images/team9.jpg",
+      name: "Ashley J Chavous'",
+    },
     {
       className: "team-item2",
       imgSrc: "/images/team8.jpg",
@@ -62,7 +66,7 @@ const TeamArea = () => {
         <div className="row team-content-wrap">
           {data.map((el, i) => (
             <div
-              className={`team-item ${el.className} col-6 col-sm-6 col-xs-6 col-md-4 col-lg-3 col-xl-3 mb-4`}
+              className={`team-item ${el.className} col-6 col-sm-6 col-xs-6 col-md-3 col-lg-3 col-xl-3 mb-4`}
             >
               <img src={el.imgSrc} alt="person" className="img-fluid" />
               <div className="team__title d-flex justify-content-center ">

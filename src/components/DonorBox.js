@@ -1,4 +1,5 @@
 import React from "react";
+import { Autoplay } from "swiper";
 
 export default function DonorBox() {
   return (
@@ -15,6 +16,9 @@ export default function DonorBox() {
         style={{
           maxWidth: "450px",
           minWidth: "320px",
+          width: "100%",
+          margin: "0 auto",
+          padding: "0",
         }}
       ></iframe>
     </div>

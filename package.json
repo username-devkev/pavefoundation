@@ -29,6 +29,7 @@
     "swiper": "^6.3.5"
   },
   "scripts": {
+    "dev":"react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",

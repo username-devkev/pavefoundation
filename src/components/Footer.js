@@ -86,7 +86,10 @@ class Footer extends Component {
                   <ul className="contact__info">
                     <li>P.O. Box 19572 Atlanta, GA 30325</li>
                     <li>
-                      <a href="mailto:thepavefoundation@gmail.com">
+                      <a
+                        href="mailto:thepavefoundation@gmail.com"
+                        style={{ textTransform: "lowercase" }}
+                      >
                         thepavefoundation@gmail.com
                       </a>
                     </li>

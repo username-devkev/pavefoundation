@@ -3,14 +3,14 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
-import Donate from "../components/Donate";
+import HelpingArea from "../components/HelpingArea";
 
 export default function DonatePage() {
   return (
     <Layout>
       <NavOne />
       <PageHeader title="Donate" backgroundColor="#5eace7" />
-      <Donate />
+      <HelpingArea />
       <Footer />
     </Layout>
   );

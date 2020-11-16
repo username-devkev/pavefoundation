@@ -15,12 +15,8 @@ const AboutPage = () => {
     <Layout pageTitle="Oxpitan | About">
       <NavOne />
       <PageHeader title="About" />
-      <AboutArea />
-      <MixerAreaTwo />
       <TeamArea />
-      <FaqArea />
-      <ServiceArea />
-      {/* <ClientsLogoTwo /> */}
+
       <Footer />
     </Layout>
   );
