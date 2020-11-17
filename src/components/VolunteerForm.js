@@ -53,17 +53,6 @@ const VolunteerForm = () => {
                     <input
                       type="text"
                       className="form-control"
-                      name="firstname"
-                      placeHolder="First Name"
-                      onChange={(e) => setFirstName(e)}
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
                       name="firstName"
                       placeHolder="First Name"
                       onChange={(e) => setFirstName(e)}
@@ -99,7 +88,7 @@ const VolunteerForm = () => {
                       type="email"
                       className="form-control"
                       name="email"
-                      placeHolder="emailAddress"
+                      placeHolder="Email Address"
                       onChange={(e) => setEmail(e)}
                     />
                   </div>
