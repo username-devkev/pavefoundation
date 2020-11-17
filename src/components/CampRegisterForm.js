@@ -95,7 +95,7 @@ export default function CampResgisterForm() {
                     type="tel"
                     className="form-control"
                     placeHolder="Guardian Phone"
-                    onChange={(e) => setGuardianPhone(e)}
+                    onChange={(e) => setGuardianPhone(e.target.value)}
                   />
                 </div>
               </div>

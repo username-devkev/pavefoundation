@@ -38,9 +38,7 @@ function App() {
           year="2021"
           imgSrc="/images/slider3.jpg"
           title="Event Details"
-          paragraphOne={`For Ages 9-13 ${(
-            <br />
-          )}Our summer camp is focused on acheiving success in STEAM (Science, Technology, Engineering, and Mathematics). Providing them with academic and enrichment opportunities.`}
+          paragraphOne={`For Ages 9-13, Our summer camp is focused on acheiving success in STEAM (Science, Technology, Engineering, and Mathematics). Providing them with academic and enrichment opportunities.`}
           paragraphTwo="Please join us in 2021 to help ignite their intellectual curiosity, develop self-confidence and instill a passion for protecting the planet by equitably distributing it's resources."
           startingTime="6:00AM to 6:00PM"
           location="Online!"

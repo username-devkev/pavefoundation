@@ -7,7 +7,7 @@ const VolunteerForm = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [steamField, setSteamField] = useState("");
+  const [steamField, setSteamField] = useState("science");
   // server response
   const [response, setResponse] = useState("");
 
@@ -35,7 +35,7 @@ const VolunteerForm = () => {
   }
   if (response.status === 200) {
     return (
-      <div>
+      <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <h1 className="h1">Thank You for Volunteering!</h1>
       </div>
     );
@@ -43,16 +43,6 @@ const VolunteerForm = () => {
 
   return (
     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <div className="col-12">
-        <h1>Inputs:</h1>
-        {/* <ul>
-          <li>{email}</li>
-          <li>{firstName}</li>
-          <li>{lastName}</li>
-          <li>{phone}</li>
-          <li>{steamField}</li>
-        </ul> */}
-      </div>
       <div className="helping-form">
         <div className="section-heading d-flex flex-column align-items-center justify-content-center">
           <div className="section-icon">
@@ -114,6 +104,7 @@ const VolunteerForm = () => {
                 <select
                   name="steamField"
                   onChange={(e) => setSteamField(e.target.value)}
+                  value={steamField}
                   style={{ height: "50px", padding: "5px" }}
                 >
                   <option value="science">Science</option>
