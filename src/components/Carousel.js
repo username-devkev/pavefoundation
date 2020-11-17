@@ -16,7 +16,7 @@ export default function Carousel() {
       body: "Help Fund Our Mission",
       button: "Donate",
       imgSrc: "/images/slider2.jpg",
-      href: "/donate",
+      href: "/events/givingtuesday",
     },
     {
       class: "carousel-item",
