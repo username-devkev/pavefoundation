@@ -33,8 +33,8 @@ function App() {
         <EventsDetailPage
           eventName="2021 Summer STEAM Camp"
           backgroundColor="#fe545c"
-          month="July"
-          day="4"
+          month="TBD"
+          day="2021"
           year="2021"
           imgSrc="/images/slider3.jpg"
           title="Event Details"

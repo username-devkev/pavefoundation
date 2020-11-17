@@ -12,8 +12,8 @@ const Events = () => {
       location: " Online",
     },
     {
-      month: "June 2021",
-      day: "26",
+      month: "2021",
+      day: "TBD",
       imgSrc: "/images/slider1.jpg",
       linkHref: "/events/2021camp",
       linkTitle: "2021 Atlanta STEAM Camp",

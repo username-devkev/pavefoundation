@@ -8,7 +8,7 @@ export default function Carousel() {
       body: "curiosity, self confidence, passion",
       button: "Learn More",
       imgSrc: "/images/slider1.jpg",
-      href: "#",
+      href: "/about",
     },
     {
       class: "carousel-item",
@@ -24,7 +24,7 @@ export default function Carousel() {
       body: "Help us organize, educate, and inspire our youth!",
       button: "Sign Up",
       imgSrc: "/images/slider3.jpg",
-      href: "#",
+      href: "/volunteer",
     },
   ];
 

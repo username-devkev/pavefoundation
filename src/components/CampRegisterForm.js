@@ -38,14 +38,14 @@ export default function CampResgisterForm() {
 
   if (!response || response.status === 400) {
     return (
-      <div className="col-6">
+      <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <div className="helping-form">
           <div className="section-heading d-flex flex-column align-items-center justify-contents-center">
             <div className="section-icon">
               <img src="/images/section-icon.png" alt="section-icon" />
             </div>
-            <h2 className="section__title ">RSVP</h2>
-            <p className="section__meta">Reserve Your Spot Now</p>
+            <h2 className="section__title ">RSVP Now!</h2>
+            <p className="section__meta">Contact Us for More Details</p>
           </div>
           <div className="form-shared">
             <div className="row">

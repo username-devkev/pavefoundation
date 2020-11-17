@@ -12,7 +12,6 @@ const ContactPage = () => {
       <div className="container">
         <div className="row"></div>
       </div>
-
       <Footer />
     </Layout>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MissionStatement() {
   return (
-    <div className="col-6 ">
+    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 ">
       <div className="fun-content">
         <div className="section-heading p-0">
           <div className="section-icon">

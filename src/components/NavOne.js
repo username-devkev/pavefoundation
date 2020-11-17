@@ -176,9 +176,9 @@ function NavOne() {
                               <li>
                                 <Link to="/about#aboutTeam">Team</Link>
                               </li>
-                              <li>
+                              {/* <li>
                                 <Link to="/contact">Contact</Link>
-                              </li>
+                              </li> */}
                             </ul>
                           </li>
                         </ul>
@@ -250,26 +250,39 @@ function NavOne() {
                   <li>
                     <Link to="/explore/gallery">Gallery</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/explore/contact">Contact</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
             </ul>
             <ul className="side-social">
               <li>
-                <a href="https://www.facebook.com/pg/thepavefoundation/events/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/pg/thepavefoundation/events/"
+                >
                   <i className="fa fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/THEPAVEFOUNDAT1?s=09">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/THEPAVEFOUNDAT1?s=09"
+                >
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/THEPAVEFOUNDAT1?s=09">
-                  <i className="fa fa-twitter"></i>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/thepavefoundation/"
+                  alt="instagram"
+                >
+                  <i className="fa fa-instagram"></i>
                 </a>
               </li>
             </ul>

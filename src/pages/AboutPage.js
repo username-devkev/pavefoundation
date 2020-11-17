@@ -13,14 +13,18 @@ const AboutPage = () => {
     <Layout pageTitle="Oxpitan | About">
       <NavOne />
       <PageHeader title="About" backgroundColor="#5eace7" />
-      <div className="container">
+      <div className="container mt-3">
+        <hr />
         <div id="aboutMission" className="row mt-3">
-          <div className="col-3">
+          <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
             <img src="/images/gallery-img7.jpg" alt="" className="img-fluid" />
           </div>
-          <div className="col-3 ">
+          {/* <div className="col-6 ">
             <img src="/images/gallery-img6.jpg" alt="" className="img-fluid" />
           </div>
+          <div className="col-6 ">
+            <img src="/images/gallery-img8.jpg" alt="" className="img-fluid" />
+          </div> */}
           <MissionStatement />
         </div>
 

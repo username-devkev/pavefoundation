@@ -39,7 +39,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className="footer-top mt-5 p-0 pt-5">
+          <div className="footer-top mt-3 p-0 pt-2">
             <div className="container">
               <div className="row footer-widget-wrap">
                 <div className="col footer-item footer-item1">
@@ -70,14 +70,14 @@ class Footer extends Component {
                   <h3 className="widget__title">About</h3>
                   <ul className="foot__links">
                     <li>
-                      <a href="/about">Mission</a>
+                      <a href="/about#aboutMission">Mission</a>
                     </li>
                     <li>
-                      <a href="/team">Team</a>
+                      <a href="/about#aboutTeam">Team</a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="/contact">Contact</a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
 

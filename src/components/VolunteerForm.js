@@ -36,9 +36,9 @@ const VolunteerForm = () => {
 
   if (!response || response.status === 400) {
     return (
-      <div className="col-6">
+      <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <div className="helping-form">
-          <div className="section-heading d-flex flex-column align-items-center justify-contents-center">
+          <div className="section-heading d-flex flex-column align-items-center justify-content-center">
             <div className="section-icon">
               <img src="/images/section-icon.png" alt="section-icon" />
             </div>
