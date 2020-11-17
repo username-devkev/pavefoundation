@@ -110,7 +110,7 @@ const VolunteerForm = () => {
 
                 <div className="col-lg-12 mt-3 mb-3">
                   <button
-                    onClick={handleSubmit}
+                    onClick={() => handleSubmit()}
                     className="theme-btn submit__btn"
                   >
                     Submit

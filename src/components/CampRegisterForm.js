@@ -126,7 +126,7 @@ export default function CampResgisterForm() {
     return (
       <div>
         <h3 className="h3">Thank You For Your Interest</h3>
-        <h4 className="h4">Please check your Email</h4>
+        <h4 className="h4">We'll reach out soon!</h4>
       </div>
     );
   }
