@@ -13,7 +13,7 @@ const VolunteerForm = () => {
 
   function handleSubmit() {
     axios
-      .post("http://localhost:5000/volunteer", {
+      .post("https://pavefoundation-api.herokuapp.com/volunteer", {
         emailAddress: email,
         firstName: firstName,
         lastName: lastName,
@@ -25,7 +25,7 @@ const VolunteerForm = () => {
         if (status === 200) {
           setResponse({
             status: 200,
-            text: "Thank You for RSVP",
+            text: "Thank You for Volunteering",
           });
         }
       })
