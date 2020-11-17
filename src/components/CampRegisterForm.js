@@ -55,7 +55,7 @@ export default function CampResgisterForm() {
                     type="text"
                     className="form-control"
                     placeHolder="Attendee First Name"
-                    onChange={(e) => setAttendeeFirst(e)}
+                    onChange={(e) => setAttendeeFirst(e.target.value)}
                   />
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function CampResgisterForm() {
                     type="text"
                     className="form-control"
                     placeHolder="Attendee Last Name"
-                    onChange={(e) => setAttendeeLast(e)}
+                    onChange={(e) => setAttendeeLast(e.target.value)}
                   />
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function CampResgisterForm() {
                     type="text"
                     className="form-control"
                     placeHolder="Attendee Age"
-                    onChange={(e) => setAttendeeAge(e)}
+                    onChange={(e) => setAttendeeAge(e.target.value)}
                   />
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default function CampResgisterForm() {
                     type="text"
                     className="form-control"
                     placeHolder="Guardian Full Name"
-                    onChange={(e) => setGuardianFullName(e)}
+                    onChange={(e) => setGuardianFullName(e.target.value)}
                   />
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function CampResgisterForm() {
                     type="email"
                     className="form-control"
                     placeHolder="Guardian Email"
-                    onChange={(e) => setGuardianEmail(e)}
+                    onChange={(e) => setGuardianEmail(e.target.value)}
                   />
                 </div>
               </div>
