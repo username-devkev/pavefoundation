@@ -39,11 +39,6 @@ const TeamArea = () => {
       name: "Danielle Weekes",
     },
     {
-      className: "team-item2",
-      imgSrc: "/images/team2.jpg",
-      name: "Nicholas Cotten",
-    },
-    {
       className: "team-item1",
       imgSrc: "/images/team4.jpg",
       name: "Faron Hill",
