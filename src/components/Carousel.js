@@ -33,7 +33,7 @@ export default function Carousel() {
       id="myCarousel"
       className="carousel slide"
       data-ride="carousel"
-      data-interval={30000}
+      data-interval={3000}
     >
       {/* <ol className="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
