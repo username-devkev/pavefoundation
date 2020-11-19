@@ -26,7 +26,16 @@ const HelpingArea = () => {
                   >
                     Make a Donation
                   </h2>
-
+                  <p
+                    className="section__desc"
+                    style={{
+                      textAlign: "center",
+                      marginBottom: "10px",
+                      color: "#343434",
+                    }}
+                  >
+                    Credit, Debit, PayPal, and ACH (Bank) Payments Accepted!
+                  </p>
                   <DonorBox />
                 </div>
               </div>

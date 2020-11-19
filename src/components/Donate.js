@@ -18,6 +18,12 @@ const Donate = () => {
           >
             Make a Donation
           </h2>
+          <h3
+            className="h4"
+            style={{ textAlign: "center", marginBottom: "15px" }}
+          >
+            Credit Card, PayPal, and ACH Transfer{" "}
+          </h3>
           <DonorBox />
         </div>
       </div>
