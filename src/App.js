@@ -64,7 +64,31 @@ function App() {
           location="Online!"
           contactEmail="thepavefoundation@gmail.com"
           blogTag={1}
-          formComponent={<DonorBox />}
+          formComponent={
+            <div>
+              <h2
+                className="section__title text__white"
+                style={{
+                  textAlign: "center",
+                  marginBottom: "15px",
+                  color: "#343434",
+                }}
+              >
+                Your Donation Helps!
+              </h2>
+              <p
+                className="section__desc"
+                style={{
+                  textAlign: "center",
+                  marginBottom: "10px",
+                  color: "#343434",
+                }}
+              >
+                Credit, Debit, PayPal, and ACH (Bank) Payments Accepted!
+              </p>
+              <DonorBox />
+            </div>
+          }
         />
       </Route>
 
