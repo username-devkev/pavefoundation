@@ -10,7 +10,7 @@ const TeamArea = () => {
     {
       className: "team-item3",
       imgSrc: "/images/team9.jpg",
-      name: "Ashley J Chavous'",
+      name: "Ashley Joyner Chavous",
     },
     {
       className: "team-item2",

@@ -33,7 +33,7 @@ export default function Carousel() {
       id="myCarousel"
       className="carousel slide"
       data-ride="carousel"
-      data-interval={3000}
+      data-interval={30000}
     >
       {/* <ol className="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -56,7 +56,7 @@ export default function Carousel() {
                 style={{ minHeight: "300px", maxHeight: "400px" }}
               >
                 <img
-                  className=" carousel__img img-responsive bd-placeholder-img d-block w-100"
+                  className=" carousel__img img-responsive bd-placeholder-img d-block "
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="xMidYMid slice"
                   focusable="false"

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function CampResgisterForm() {
+export default function CampRegisterForm() {
   //States
   const [attendeeFirst, setAttendeeFirst] = useState(null);
   const [attendeeLast, setAttendeeLast] = useState(null);

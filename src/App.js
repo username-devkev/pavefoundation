@@ -39,7 +39,7 @@ function App() {
           imgSrc="/images/slider3.jpg"
           title="Event Details"
           paragraphOne={`Our summer camp is focused on achieving success in STEAM (Science, Technology, Engineering, Arts, and Mathematics). Open Registration: Ages 11-14, Limited Registration: Ages 9-10, Attendence Cost:TBD`}
-          paragraphTwo="Please join us in 2021 for a four-day (9AM-4PM) workshop complete with daily STEAM sessions, journaling, dancing, hands-on teaching, and more!"
+          paragraphTwo="Please join us in 2021 for a five-day (9AM-4PM) workshop complete with daily STEAM sessions, journaling, dancing, hands-on teaching, and more!"
           startingTime="6:00AM to 6:00PM"
           location="Online!"
           contactEmail="thepavefoundation@gmail.com"
